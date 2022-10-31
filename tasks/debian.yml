@@ -1,0 +1,7 @@
+- name: Install packages debian
+  apt:
+    name:
+      - htop
+      - tmux
+      - mc
+   
