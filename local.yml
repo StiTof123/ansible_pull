@@ -3,6 +3,11 @@
   become: true 
 
   tasks:
-  - name: Install htop
-    dnf:
-      name: htop
+  - name: Install packages redhat 
+    import_tasks: tasks/redhat.yml
+    when: ansible_facts['os_family']|lower == 'redhat'
+
+  - name: Install packages debian
+    import_tasks: tasks/debian.yml 
+    when: ansible_facts['os_family']|lower == 'debian' 
+   
