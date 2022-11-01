@@ -1,7 +1,6 @@
 - name: Install packages redhat
   yum:
     name:
-      - htop
       - tmux
       - mc
    
