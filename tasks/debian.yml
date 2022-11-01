@@ -4,4 +4,7 @@
       - htop
       - tmux
       - mc
-   
+      - micro
+      - nmap
+      - exa
+      - batcat
